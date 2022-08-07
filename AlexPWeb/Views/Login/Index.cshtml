@@ -1,0 +1,20 @@
+﻿@model LoginModel
+
+<form asp-controller="Login" asp-action="Login" method="post">
+    <div class="border p-3 mt-4">
+        <div class="row pb-2">
+            <h2 class="text-primary">Log In</h2>
+            <hr/>
+        </div>
+        <div class="mb-3">
+            <label class="form-label" asp-for="UserEmail">Email:</label>
+            <input id="email" class="form-control" asp-for="UserEmail" /> 
+            <label class="form-label" asp-for="UserPassword">Password:</label>
+            <input id="password" class="form-control" asp-for="UserPassword" />
+            <button class="btn btn-primary" id="submit" disabled type="submit">Log In</button>  
+        </div>
+    </div>
+</form>
+<a asp-controller="SignUp" asp-action="Index">Don't have an account?</a>
+
+<script defer src="~/js/LogIn.js"></script>

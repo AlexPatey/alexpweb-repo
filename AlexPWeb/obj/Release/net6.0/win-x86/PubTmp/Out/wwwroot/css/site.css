@@ -1,0 +1,32 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+
+a {
+    font-size: 18pt;
+}
+
+li a {
+    font-size: 16pt;
+}
+
+.headerUl {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
