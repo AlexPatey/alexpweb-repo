@@ -30,3 +30,7 @@ li a {
     justify-content: flex-end;
     width: 100%;
 }
+
+.handwrittenImg {
+    width: 400px;
+}
