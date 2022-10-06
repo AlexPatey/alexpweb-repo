@@ -1,5 +1,6 @@
 html {
   font-size: 14px;
+  font-family: Roboto;
 }
 
 @media (min-width: 768px) {
@@ -31,6 +32,46 @@ li a {
     width: 100%;
 }
 
+.mainContainer {
+    padding: 30px;
+}
+
+.centerRow {
+    display: flex;
+    justify-content: center;
+}
+
+.fileUpload {
+    width: auto;
+}
+
+.imgPreviewText {
+    text-align: center;
+    font-size: 16pt;
+    padding: 15px 0;
+}
+
 .handwrittenImg {
     width: 400px;
+}
+
+.convertImgBtn {
+    width: auto;
+    margin: 15px 0;
+}
+
+.imgText {
+    min-height: 400px;
+    height: calc(100vh - 250px);
+}
+
+.saveTxtFileBtn {
+    width: auto;
+    margin: 25px 0 0 0;
+}
+
+@media(max-width: 768px) {
+    .imgText {
+        height: 400px;
+    }
 }

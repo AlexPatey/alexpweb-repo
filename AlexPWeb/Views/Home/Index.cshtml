@@ -1,5 +1,27 @@
-﻿<input id="f" type="file" />
-<img id="i" class="handwrittenImg"/>
-<button id="convertImgToText" class="btn btn-success" hidden>Convert Image</button>
+﻿<div class="row">
+    <div class="col-md-6 col-sm-12">
+        <div class="row centerRow">
+            <label for="fileUpload" class="btn btn-primary fileUpload">Select Image To Convert</label>
+            <input id="fileUpload" type="file" accept="image/jpeg, image/png" hidden/> 
+        </div>
+        <div class="row centerRow">
+            <div id="imgPreviewText" class="imgPreviewText" hidden>Image Preview</div>
+        </div>
+        <div class="row centerRow">
+            <img id="img" class="handwrittenImg"/>
+        </div>
+        <div class="row centerRow">
+            <button id="convertImgToText" class="btn btn-success convertImgBtn" hidden>Convert Image</button>
+        </div>
+    </div>
+    <div class="col-md-6 col-sm-12">
+        <div class="row centerRow">
+            <textarea id="imgText" class="imgText" hidden></textarea>
+        </div>
+        <div class="row centerRow">
+            <button id="saveTxtFileBtn" class="btn btn-success saveTxtFileBtn" hidden>Save As Text File</button>
+        </div>
+    </div>
+</div>
 
 <script defer src="~/js/home.js"></script>
