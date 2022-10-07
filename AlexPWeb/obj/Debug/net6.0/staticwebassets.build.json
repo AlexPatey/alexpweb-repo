@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "rUcXVzbW0buiBkPnTjF8lg6JjjDIiV03dKmroczBk50=",
+  "Hash": "9LitlkIUPGi9xXFvGEu4Npr1jwKvVZU2Yjo8sgvGB2g=",
   "Source": "AlexPWeb",
   "BasePath": "_content/AlexPWeb",
   "Mode": "Default",
@@ -185,6 +185,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon-32x32.png"
+    },
+    {
+      "Identity": "D:\\Working Folder\\AlexPWeb\\AlexPWeb\\wwwroot\\js\\FileSaver.js",
+      "SourceId": "AlexPWeb",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Working Folder\\AlexPWeb\\AlexPWeb\\wwwroot\\",
+      "BasePath": "_content/AlexPWeb",
+      "RelativePath": "js/FileSaver.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\FileSaver.js"
     },
     {
       "Identity": "D:\\Working Folder\\AlexPWeb\\AlexPWeb\\wwwroot\\js\\LogIn.js",

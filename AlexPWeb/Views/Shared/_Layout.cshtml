@@ -9,7 +9,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Alex P</title>
+    <title>Alex Patey</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/AlexPWeb.styles.css" asp-append-version="true" />
@@ -22,11 +22,11 @@
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
 </head>
-<body>
+<body class="bg-dark">
     <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow">
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-dark bg-dark border-bottom border-secondary box-shadow">
             <div class="container-fluid">
-                <a class="navbar-brand" asp-controller="Home" asp-action="Index">OCR "Optical Character Recognition" Image To Text Convertor</a>
+                <a class="navbar-brand" asp-controller="Home" asp-action="Index">OCR "Optical Character Recognition" Text Extractor</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -36,11 +36,11 @@
                         <li class="nav-item">
                             @if (signedInUser != null)
                             {
-                                <a class="nav-link text-dark" asp-controller="Account" asp-action="Index">@signedInUser.DisplayName</a>
+                                <a class="nav-link text-light" asp-controller="Account" asp-action="Index">@signedInUser.DisplayName</a>
                             }
                             else
                             {
-                                <a class="nav-link text-dark" asp-controller="Login" asp-action="Index">Login</a>
+                                <a class="nav-link text-light" asp-controller="Login" asp-action="Index">Login</a>
                             }
                         </li>
                     </ul>
@@ -55,9 +55,9 @@
         </main>
     </div>
 
-    <footer class="border-top footer text-muted">
-        <div class="container">
-            &copy; 2022 - AlexPWeb - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+    <footer class="border-top border-secondary footer text-muted">
+        <div class="footerContainer">
+            &copy; 2022 - AlexPWeb
         </div>
     </footer>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>

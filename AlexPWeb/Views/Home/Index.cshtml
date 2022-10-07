@@ -1,27 +1,29 @@
 ﻿<div class="row">
     <div class="col-md-6 col-sm-12">
-        <div class="row centerRow">
+        <div class="row">
             <label for="fileUpload" class="btn btn-primary fileUpload">Select Image To Convert</label>
             <input id="fileUpload" type="file" accept="image/jpeg, image/png" hidden/> 
         </div>
-        <div class="row centerRow">
-            <div id="imgPreviewText" class="imgPreviewText" hidden>Image Preview</div>
+        <div class="row">
+            <div id="imgPreviewText" class="imgPreviewText" hidden>Image Preview:</div>
         </div>
-        <div class="row centerRow">
+        <div class="row">
             <img id="img" class="handwrittenImg"/>
         </div>
-        <div class="row centerRow">
+        <div class="row">
             <button id="convertImgToText" class="btn btn-success convertImgBtn" hidden>Convert Image</button>
         </div>
     </div>
     <div class="col-md-6 col-sm-12">
-        <div class="row centerRow">
+        <div class="row">
+            <div id="convertedText" class="convertedText" hidden>Converted Text (Please Make Edits As Needed)</div>
             <textarea id="imgText" class="imgText" hidden></textarea>
         </div>
-        <div class="row centerRow">
-            <button id="saveTxtFileBtn" class="btn btn-success saveTxtFileBtn" hidden>Save As Text File</button>
+        <div class="row">
+            <button id="saveTxtFileBtn" class="btn btn-success saveTxtFileBtn" hidden>Download As Text File</button>
         </div>
     </div>
 </div>
 
+<script src="~/js/FileSaver.js"></script>
 <script defer src="~/js/home.js"></script>

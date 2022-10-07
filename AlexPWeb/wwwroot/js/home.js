@@ -25,6 +25,7 @@ $('#convertImgToText').click(function () {
         },
         success: function (result) {
             console.log(result.text);
+            document.getElementById('convertedText').hidden = false;
             document.getElementById('imgText').innerHTML = result.text;
             document.getElementById('imgText').hidden = false;
             document.getElementById('saveTxtFileBtn').hidden = false;
@@ -34,4 +35,10 @@ $('#convertImgToText').click(function () {
         }
     });
 
+});
+
+$('#saveTxtFileBtn').click(function () {
+    var textToSave = document.getElementById('imgText').textContent;
+    var blob = new Blob([textToSave], { type: "text/plain;charset=utf-8" });
+    saveAs(blob, "helloWorld.txt");
 });
