@@ -33,7 +33,7 @@ li a {
 }
 
 .mainContainer {
-    padding: 30px;
+    padding: 15px 30px;
 }
 
 .footerContainer {
@@ -46,7 +46,6 @@ li a {
 }
 
 .imgPreviewText {
-    font-size: 16pt;
     padding: 15px 10px;
     color: white;
 }
@@ -64,18 +63,59 @@ li a {
     background-color: lightgrey;
     resize: none;
     min-height: 400px;
-    height: calc(100vh - 250px);
+    height: calc(100vh - 350px);
 }
 
 .saveTxtFileBtn {
     width: auto;
-    margin: 25px 0 0 0;
+    margin: 15px 0 0 0;
 }
 
 .convertedText {
     color: white;
-    font-size: 16pt;
     padding-bottom: 15px;
+}
+
+.fileNameInput {
+    width: 500px;
+    margin: 15px 0 0 0;
+}
+
+.description {
+    color: white;
+    text-align: left;
+    padding-bottom: 15px;
+}
+
+.loaderContainer {
+    position: fixed;
+    background-color: #eee5;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loader {
+    border: 10px solid #f3f3f3;
+    border-top: 10px solid #3498db; 
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
 }
 
 @media(max-width: 768px) {

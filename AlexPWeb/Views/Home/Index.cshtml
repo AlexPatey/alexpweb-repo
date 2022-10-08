@@ -1,4 +1,7 @@
 ﻿<div class="row">
+    <div class="row">
+        <div class="description">This is a web application that allows the user to extract text (typed and handwritten) from an image and then save the extracted text to a .txt file</div>
+    </div>
     <div class="col-md-6 col-sm-12">
         <div class="row">
             <label for="fileUpload" class="btn btn-primary fileUpload">Select Image To Convert</label>
@@ -18,6 +21,9 @@
         <div class="row">
             <div id="convertedText" class="convertedText" hidden>Converted Text (Please Make Edits As Needed)</div>
             <textarea id="imgText" class="imgText" hidden></textarea>
+        </div>
+        <div class="row">
+            <input id="fileName" class="form-control fileNameInput" type="text" placeholder="(Optional) Choose file name before downloading" hidden />
         </div>
         <div class="row">
             <button id="saveTxtFileBtn" class="btn btn-success saveTxtFileBtn" hidden>Download As Text File</button>

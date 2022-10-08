@@ -13,7 +13,7 @@
 });
 
 $('#convertImgToText').click(function () {
-
+    document.getElementById('loaderContainer').hidden = false;
     var imgSrc = document.getElementById('img').getAttribute('src');
 
     $.ajax({
@@ -26,9 +26,11 @@ $('#convertImgToText').click(function () {
         success: function (result) {
             console.log(result.text);
             document.getElementById('convertedText').hidden = false;
-            document.getElementById('imgText').innerHTML = result.text;
+            document.getElementById('imgText').value = result.text;
             document.getElementById('imgText').hidden = false;
+            document.getElementById('fileName').hidden = false;
             document.getElementById('saveTxtFileBtn').hidden = false;
+            document.getElementById('loaderContainer').hidden = true;
         },
         error: function (req, status, error) {
             alert("error with convert img ajax call!")
@@ -38,7 +40,11 @@ $('#convertImgToText').click(function () {
 });
 
 $('#saveTxtFileBtn').click(function () {
-    var textToSave = document.getElementById('imgText').textContent;
+    var textToSave = document.getElementById('imgText').value;
+    var fileName = document.getElementById('fileName').value;
     var blob = new Blob([textToSave], { type: "text/plain;charset=utf-8" });
-    saveAs(blob, "helloWorld.txt");
+    if (fileName != null && fileName != '') 
+        saveAs(blob, fileName);
+    else
+        saveAs(blob, "ExtractedText.txt");
 });
